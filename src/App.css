@@ -1,0 +1,50 @@
+/* variables */
+:root {
+    --transition: 0.3s;
+    --dark-color: #121212;
+    --grey-color: #242424;
+    --light-color: #ECECEC;
+    --light-color-dim: #ecececa2;
+    --theme-color-1: #B15EFF;
+}
+
+/* color */
+.dark-color-text {
+    color: var(--dark-color) !important;
+}
+
+.dark-color-bg {
+    background-color: var(--dark-color) !important;
+}
+
+.theme-color-1-text {
+    color: var(--theme-color-1) !important;
+}
+
+.theme-color-1-bg {
+    background-color: var(--theme-color-1) !important;
+}
+
+.light-color-text {
+    color: var(--light-color) !important;
+}
+
+.light-color-bg {
+    background-color: var(--light-color) !important;
+}
+
+.light-color-dim-text {
+    color: var(--light-color-dim) !important;
+}
+
+.light-color-dim-bg {
+    background-color: var(--light-color-dim) !important;
+}
+
+.grey-color-text {
+    color: var(--grey-color) !important;
+}
+
+.grey-color-bg {
+    background-color: var(--grey-color) !important;
+}

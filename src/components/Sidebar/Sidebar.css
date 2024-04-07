@@ -1,0 +1,3 @@
+.sidebar{
+    transition: width var(--transition);
+}
