@@ -48,3 +48,16 @@
 .grey-color-bg {
     background-color: var(--grey-color) !important;
 }
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: var(--light-color-dim) !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: var(--light-color-dim) !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: var(--light-color-dim) !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: var(--light-color-dim) !important;
+}

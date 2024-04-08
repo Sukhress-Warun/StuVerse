@@ -16,14 +16,14 @@ function App() {
       <div className="container-fluid px-0">
         <div className="row p-0 m-0">
           <div className="col-auto p-0 m-0">
-            <Sidebar login={login} />
+            <Sidebar login={login} setLogin={setLogin} />
           </div>
           <div className="col p-0 m-0">
             <Routes>
               <Route path="/" element={<Home />}/>
-              <Route path="/login" element={<Login />}/>
-              <Route path="/signup" element={<Signup />}/> 
-              <Route path="/StudentForm" element={<StudentForm />}/>
+              <Route path="/login" element={<Login login={login} setLogin={setLogin}/>}/>
+              <Route path="/signup" element={<Signup login={login} setLogin={setLogin} />}/> 
+              <Route path="/StudentForm" element={<StudentForm login={login} />}/>
             </Routes>
           </div>
         </div>

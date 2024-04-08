@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Sidebar.css';
 
-function Sidebar({ login }) {
+function Sidebar({ login, setLogin }) {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleSidebar = () => {
@@ -42,7 +42,18 @@ function Sidebar({ login }) {
                             </li>
 
                             }
-                           
+                            {
+                                login &&
+                                <li className="nav-item">
+                                <Link className="nav-link light-color-text p-2 text-center" to="/" onClick={()=>{
+                                    toggleSidebar();
+                                    setLogin(false);
+                                }}>
+                                    Logout
+                                </Link>
+                            </li>
+
+                            }
                         </ul>
 
                     </> :
