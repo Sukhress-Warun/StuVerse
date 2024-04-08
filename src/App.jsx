@@ -9,7 +9,7 @@ import Signup from './components/Authentication/Signup'
 import StudentForm from './components/StudentForm/StudentForm'
 
 function App() {
-  const [login, setLogin] = useState(true)
+  const [login, setLogin] = useState(false)
 
   return (
     <>
