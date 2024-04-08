@@ -139,7 +139,7 @@ function StudentForm({login}) {
             form.append(key, formData[key]);
         }
         try {
-            const response = await axios.post('http://localhost:8080/student/add', form, {
+            const response = await axios.post('https://stuverse-backend.onrender.com/student/add', form, {
                 headers: { 'Content-Type': 'multipart/form-data' }
             });
             console.log(response);

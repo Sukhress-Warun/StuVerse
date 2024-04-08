@@ -16,7 +16,7 @@ export default function Signup({login, setLogin}) {
             setMessage('Passwords do not match')
             return
         }
-        fetch('http://localhost:8080/user/signup', {
+        fetch('https://stuverse-backend.onrender.com/user/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

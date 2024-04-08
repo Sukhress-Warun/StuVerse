@@ -12,7 +12,7 @@ export default function Login({login, setLogin}) {
     function handleLogin() {
         let email = document.getElementById('loginEmail').value
         let password = document.getElementById('loginPassword').value
-        fetch('http://localhost:8080/user/login', {
+        fetch('https://stuverse-backend.onrender.com/user/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
