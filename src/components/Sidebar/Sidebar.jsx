@@ -45,6 +45,15 @@ function Sidebar({ login, setLogin }) {
                             {
                                 login &&
                                 <li className="nav-item">
+                                <Link className="nav-link light-color-text p-2 text-center" to="/StudentsTable" onClick={toggleSidebar}>
+                                    Students Table
+                                </Link>
+                            </li>
+
+                            }
+                            {
+                                login &&
+                                <li className="nav-item">
                                 <Link className="nav-link light-color-text p-2 text-center" to="/" onClick={()=>{
                                     toggleSidebar();
                                     setLogin(false);

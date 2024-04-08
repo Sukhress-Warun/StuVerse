@@ -7,6 +7,7 @@ import Home from './components/Home/Home'
 import Login from './components/Authentication/Login'
 import Signup from './components/Authentication/Signup'
 import StudentForm from './components/StudentForm/StudentForm'
+import StudentsTable from './components/StudentsTable/StudentsTable'
 
 function App() {
   const [login, setLogin] = useState(false)
@@ -24,6 +25,7 @@ function App() {
               <Route path="/login" element={<Login login={login} setLogin={setLogin}/>}/>
               <Route path="/signup" element={<Signup login={login} setLogin={setLogin} />}/> 
               <Route path="/StudentForm" element={<StudentForm login={login} />}/>
+              <Route path="/StudentsTable" element={<StudentsTable login={login} />}/>
             </Routes>
           </div>
         </div>
