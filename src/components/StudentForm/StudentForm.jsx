@@ -51,7 +51,22 @@ function GetStepContent({step, studentData, handleInputChange, handleFileChange}
             return (
                 <>
                     <div>
-
+                        <div className="input-group flex-nowrap mt-4">
+                            <span className="input-group-text grey-color-bg light-color-text">Photo</span>
+                            <input name="photoFile" type="file" className="form-control grey-color-bg light-color-text"/>
+                        </div>
+                        <div className="input-group flex-nowrap mt-4">
+                            <span className="input-group-text grey-color-bg light-color-text">Mark Sheet 10th</span>
+                            <input name="marksheet10thFile" type="file" className="form-control grey-color-bg light-color-text"/>
+                        </div>
+                        <div className="input-group flex-nowrap mt-4">
+                            <span className="input-group-text grey-color-bg light-color-text">Mark Sheet 12th</span>
+                            <input name="marksheet12thFile" type="file" className="form-control grey-color-bg light-color-text"/>
+                        </div>
+                        <div className="input-group flex-nowrap mt-4">
+                            <span className="input-group-text grey-color-bg light-color-text">TC Certificate</span>
+                            <input name="tcCertificateFile" type="file" className="form-control grey-color-bg light-color-text"/>
+                        </div>
                     </div>
                 </>
             );

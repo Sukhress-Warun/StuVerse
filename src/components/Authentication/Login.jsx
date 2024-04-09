@@ -35,9 +35,9 @@ export default function Login({login, setLogin}) {
 }
 
 return (
-    <>
+    <div className='row'>
         <h1 className="text-center my-5 light-color-text">Admin Login</h1>
-        <div className="w-50 mx-auto my-5" >
+        <div className="col-lg-6 col-10 mx-auto my-5" >
             <div className="input-group flex-nowrap ">
                 <span className="input-group-text grey-color-bg light-color-text">Email</span>
                 <input type="email" id="loginEmail" className="form-control grey-color-bg light-color-text" placeholder="Email" />
@@ -54,6 +54,6 @@ return (
                 <Link to="/signup" className="btn btn-dark w-25">Sign Up</Link>
             </div>
         </div>
-    </>
+    </div>
 )
 }

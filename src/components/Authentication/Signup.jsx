@@ -38,9 +38,9 @@ export default function Signup({login, setLogin}) {
         })
     }
     return (
-        <>
+        <div className='row'>
             <h1 className="text-center my-5 light-color-text">Create Account</h1>
-            <div className="w-50 mx-auto my-5" >
+            <div className="col-lg-6 col-10 mx-auto my-5" >
                 <div className="input-group flex-nowrap ">
                     <span className="input-group-text grey-color-bg light-color-text">Email</span>
                     <input type="email" id="signupEmail" className="form-control grey-color-bg light-color-text" placeholder="Email" />
@@ -61,6 +61,6 @@ export default function Signup({login, setLogin}) {
                     <Link to="/login" className="btn btn-dark w-25">Login</Link>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
